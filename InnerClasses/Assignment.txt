@@ -1,0 +1,8 @@
+
+Part 1: Create an abstract class  called BalanceComputer that has one implemented static method  called getBalanceComputer (char type)  and one abstract method getBalance(). The getBalanceComputer() method returns BalanceComputer  object  with one of the formula (listed below) implemented for getBalance() based on the type of account: current (C)or  savings(S).
+ For current acct  formula is : 
+ amt (end of the year)= principal amount+ (principal amount * rate * time )/100
+ For Savings formula is : 
+ amt (calculated quarterly)= principal amount (1+ rate/4)4t
+Hint: use anonymous inner class.
+Part 2: Create another class called BankAccount with  acct number, acct  type, month of deposit, deposit (), withdraw (), and getBalance () methods. The getBalance()  must determine the acct type and get the appropriate BalanceComputer object . Using this object and the balances (at the end or quarter or year  based on the account type) from list of transactions  (deposit/ withdraw), getBalance() must compute the amount and return the same. Test this application.
